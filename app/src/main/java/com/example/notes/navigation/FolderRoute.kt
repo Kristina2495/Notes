@@ -17,6 +17,9 @@ fun RouteFolders(viewModel: FolderViewModel = viewModel(),
         when (event) {
             is FolderEvent.FolderOnClick -> onUserClick(event.folderId)
             is FolderEvent.LoadFolders -> viewModel.onEvent(event)
+            is FolderEvent.OpenCreateNewFolderWindow -> viewModel.onEvent(event)
+            is FolderEvent.SaveNewFolder -> viewModel.onEvent(event)
+            is FolderEvent.CloseNewFolderWindow -> viewModel.onEvent(event)
         }
     })
 }

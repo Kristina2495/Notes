@@ -1,9 +1,9 @@
 package com.example.notes.di
 import android.content.Context
 import androidx.room.Room
-import com.example.notes.data.local.AppDatabase
-import com.example.notes.data.local.dao.FolderDao
-import com.example.notes.data.local.dao.NoteDao
+import com.example.notes.data.AppDatabase
+import com.example.notes.data.dao.FolderDao
+import com.example.notes.data.dao.NoteDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

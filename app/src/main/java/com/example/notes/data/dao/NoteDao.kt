@@ -1,10 +1,10 @@
-package com.example.notes.data.local.dao
+package com.example.notes.data.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
-import com.example.notes.data.local.entity.NoteEntity
+import com.example.notes.data.entity.NoteEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

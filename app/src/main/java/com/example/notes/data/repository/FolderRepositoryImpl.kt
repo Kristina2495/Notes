@@ -2,9 +2,9 @@ package com.example.notes.data.repository
 
 import com.example.notes.domain.model.Folder
 import com.example.notes.domain.repository.FolderRepository
-import com.example.notes.data.local.dao.FolderDao
-import com.example.notes.data.local.mapper.folderToDomain
-import com.example.notes.data.local.mapper.folderToEntity
+import com.example.notes.data.dao.FolderDao
+import com.example.notes.data.folderToDomain
+import com.example.notes.data.folderToEntity
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject

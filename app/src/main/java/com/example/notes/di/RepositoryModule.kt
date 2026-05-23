@@ -1,7 +1,5 @@
 package com.example.notes.di
 
-import com.example.notes.data.local.dao.FolderDao
-import com.example.notes.data.local.dao.NoteDao
 import com.example.notes.data.repository.FolderRepositoryImpl
 import com.example.notes.data.repository.NoteRepositoryImpl
 import com.example.notes.domain.repository.FolderRepository

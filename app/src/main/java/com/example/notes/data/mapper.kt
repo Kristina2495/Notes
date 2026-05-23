@@ -1,9 +1,9 @@
-package com.example.notes.data.local.mapper
+package com.example.notes.data
 
+import com.example.notes.data.entity.FolderEntity
+import com.example.notes.data.entity.NoteEntity
 import com.example.notes.domain.model.Folder
 import com.example.notes.domain.model.Note
-import com.example.notes.data.local.entity.FolderEntity
-import com.example.notes.data.local.entity.NoteEntity
 
 fun NoteEntity.noteToDomain() : Note {
     return Note (
@@ -16,7 +16,7 @@ fun NoteEntity.noteToDomain() : Note {
 }
 
 fun Note.noteToEntity() : NoteEntity {
-    return NoteEntity (
+    return NoteEntity(
         id = id,
         folderId = folderId,
         name = name,
@@ -33,7 +33,7 @@ fun FolderEntity.folderToDomain() : Folder {
 }
 
 fun Folder.folderToEntity() : FolderEntity {
-    return FolderEntity (
+    return FolderEntity(
         id = id,
         name = name
     )
